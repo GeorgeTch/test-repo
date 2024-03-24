@@ -1,24 +1,24 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="header">
       <div className="container">
         <div className="logo">
-          <img src="../assets/logo.png" alt="Company Logo" />
+          <Link to="/">
+            <img src="../assets/logo.png" alt="Company Logo" />
+          </Link>
         </div>
         <nav className="nav-links">
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">Products</a>
+              <Link to="contact">Contact</Link>
             </li>
-            <li>
-              <a href="/">About Us</a>
-            </li>
-            <li>
-              <a href="/">Contact</a>
-            </li>
+            <li>{/* <Link to="">About Us</Link> */}</li>
+            <li></li>
           </ul>
         </nav>
       </div>

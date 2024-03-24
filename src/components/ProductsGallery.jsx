@@ -42,12 +42,10 @@ export default function ProductsGallery() {
   ];
 
   return (
-    <main>
-      <div className="products-container">
-        {productsData.map((product) => (
-          <Product {...product} />
-        ))}
-      </div>
-    </main>
+    <div className="products-container">
+      {productsData.map((product, idx) => (
+        <Product key={idx} {...product} />
+      ))}
+    </div>
   );
 }
