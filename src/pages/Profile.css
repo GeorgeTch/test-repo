@@ -1,0 +1,18 @@
+.profile-container {
+  background-color: rgb(248, 246, 246);
+  padding: 1rem;
+}
+
+.profile-container ul {
+  list-style-type: none;
+}
+
+.profile-container div,
+.static-profile-info li {
+  margin-bottom: 1rem;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
