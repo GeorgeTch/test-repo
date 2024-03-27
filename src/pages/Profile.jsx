@@ -2,9 +2,9 @@ import "./Profile.css";
 
 function Profile() {
   const profileInfo = {
-    name: "Iakob",
-    lastName: "Gogebashvili",
-    email: "Gogeba@gmail.com",
+    name: "Jakob",
+    lastName: "Simpson",
+    email: "SimpsonJ@gmail.com",
   };
   return (
     <div className="profile-container">
@@ -12,7 +12,7 @@ function Profile() {
         <ul>
           <li>Name: {profileInfo.name}</li>
           <li>Last Name: {profileInfo.lastName}</li>
-          <li>Name: {profileInfo.email}</li>
+          <li>Email: {profileInfo.email}</li>
         </ul>
       </div>
       <form className="profile-form" action="">
