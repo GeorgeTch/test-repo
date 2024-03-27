@@ -15,10 +15,14 @@ export default function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
+              <Link to="profile">Profile</Link>
+            </li>
+            <li>
+              <Link to="blog">Blog</Link>
+            </li>
+            <li>
               <Link to="contact">Contact</Link>
             </li>
-            <li>{/* <Link to="">About Us</Link> */}</li>
-            <li></li>
           </ul>
         </nav>
       </div>

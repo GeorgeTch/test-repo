@@ -1,4 +1,4 @@
-import productsData from "./Data";
+import productsData from "./productsData";
 
 function Product({ title, description, image }) {
   return (
