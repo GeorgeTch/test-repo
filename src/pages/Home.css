@@ -22,8 +22,9 @@
 .products-container {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 23%;
+  grid-auto-columns: 28%;
   overflow-x: auto;
+  min-width: 100%;
 }
 
 .products-container::-webkit-scrollbar {
@@ -71,4 +72,6 @@
   font-weight: bold;
   padding: 8px;
   border-radius: 50px;
+  width: 70%;
+  align-self: center;
 }
