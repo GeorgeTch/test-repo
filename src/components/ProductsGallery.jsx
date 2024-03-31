@@ -1,6 +1,3 @@
-import productsData from "./productsData";
-import { useState } from "react";
-
 function Product({ title, description, image }) {
   return (
     <div className="product">

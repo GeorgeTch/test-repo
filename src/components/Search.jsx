@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Search({ onSort, onSearch }) {
+export default function Search({ onSort, onSearch, isSorted }) {
   // const [searchValue, setSearchValue] = useState("");
 
   const handleInputChange = (event) => {
@@ -12,7 +12,9 @@ export default function Search({ onSort, onSearch }) {
   return (
     <div className="search">
       <input type="text" placeholder="Search..." onChange={handleInputChange} />
-      <button onClick={onSort}>Sort by Title</button>
+      <button onClick={onSort}>
+        {isSorted ? "Reset Sorting" : "Sort by Title"}
+      </button>
     </div>
   );
 }

@@ -17,16 +17,22 @@ function Home() {
     setIsSorted(!isSorted);
   };
 
-  const handleSearch = (value) => {
-    const filteredProducts = productsData.filter((product) =>
-      product.title.toLowerCase().includes(value.toLowerCase())
-    );
-    setProductsList(filteredProducts);
+  const debounceHandler = (value) => {
+    setTimeout(() => {
+      const filteredProducts = productsData.filter((product) =>
+        product.title.toLowerCase().includes(value.toLowerCase())
+      );
+      setProductsList(filteredProducts);
+    }, 1500);
   };
 
   return (
     <>
-      <Search onSort={handleSortClick} onSearch={handleSearch} />
+      <Search
+        onSort={handleSortClick}
+        onSearch={debounceHandler}
+        isSorted={isSorted}
+      />
       <ProductsGallery products={productsList} />
     </>
   );
