@@ -1,4 +1,5 @@
 import productsData from "./productsData";
+import { useState } from "react";
 
 function Product({ title, description, image }) {
   return (
@@ -13,10 +14,10 @@ function Product({ title, description, image }) {
   );
 }
 
-export default function ProductsGallery() {
+export default function ProductsGallery({ products }) {
   return (
     <div className="products-container">
-      {productsData.map((product, idx) => (
+      {products.map((product, idx) => (
         <Product key={idx} {...product} />
       ))}
     </div>
